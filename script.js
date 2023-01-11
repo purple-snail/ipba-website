@@ -1,28 +1,22 @@
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add(
-                "animate__animated",
-                "animate__fadeInRightBig"
-            );
-        }
-    });
-});
+const switchMenu = document.getElementById('switch-menu')
+let timeline = gsap.timeline()
 
-const groupMembers = document.querySelectorAll(".group-member");
-let ms = 0;
+switchMenu.onclick = () => {
+    timeline.to('#quarter-menu', {
+        opacity: 0,
+        zIndex: 0,
+        duration: 0.5
+    })
 
-groupMembers.forEach((el) => {
-    el.style.setProperty("animation-delay", ms + "ms");
-    observer.observe(el);
-    ms = ms + 100;
-});
+    timeline.to('#website-menu', {
+        opacity: 1,
+        zIndex: 999,
+        duration: 0.5
+    })
 
-window.addEventListener("scroll", (e) => {
-    const nav = document.querySelector(".navbar");
-    if (window.pageYOffset > 0) {
-        nav.classList.add("add-shadow");
-    } else {
-        nav.classList.remove("add-shadow");
-    }
-});
+    timeline.to('#back-arrow', {
+        x: 46,
+        duration: 0.5
+    })
+}
+

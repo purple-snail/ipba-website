@@ -1,197 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>IPBA Website</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css" type="text/css" media="all">
-        <script defer src='script.js'></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website Menu</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="animate__animated animate__fadeIn">
-            <nav class="navbar navbar-expand-lg sticky-top w-100" style="background-color: #027db5;">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link hvr-grow" href="#introduction">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link hvr-grow" href="#ipba">IPBA</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link hvr-grow" href="#meet-the-team">Meet the Team</a>
-                            </li>
-                            <!-- <li class="nav-item dropdown"> -->
-                            <!--     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> -->
-                            <!--         Even more pain -->
-                            <!--     </a> -->
-                            <!--     <ul class="dropdown-menu"> -->
-                            <!--         <li><a class="dropdown-item" href="#">Lots of research</a></li> -->
-                            <!--         <li><a class="dropdown-item" href="#">Screeeennnshooootttssss</a></li> -->
-                            <!--         <li><hr class="dropdown-divider"></li> -->
-                            <!--         <li><a class="dropdown-item" href="#">Lots of problems</a></li> -->
-                            <!--     </ul> -->
-                            <!-- </li> -->
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div class='text-center p-3 text-white' id='introduction' style="height: 60vh;">
-                <div class='row h-50'>
-                    <div class='col d-flex align-items-end justify-content-center'>
-                        <h1 class="mb-3">Group 7 IPBA Website</h1>
-                    </div>
-                </div>
-                <div class='row h-25'>
-                    <div class='col d-flex align-items-start justify-content-center'>
-                        <p>
-                            Welcome, this is our IPBA website.
-                        </p>
-                    </div>
+        <div id='menu'>
+            <div id="quarter-menu" class="main-container">
+                <div class="cards">
+                    <a href="#" class="card" id="switch-menu">
+                        <h1 class="card__title">Quarter 1</h1>
+                    </a>
+                    <a href="#" class="card">
+                        <h1 class="card__title">Quarter 2</h1>
+                    </a>
                 </div>
             </div>
-            <div class='p-3 text-white' id='ipba'>
-                <h1 class="text-center mb-3">IPBA</h1>
-                <div class="mx-5">
-                    <p>
-                        <dl>
-                            <dt>Chosen Category</dt>
-                            <dd>&emsp;&emsp;- Educational Videos</dd>
-                            <dt>Target audience</dt>
-                            <dd>&emsp;&emsp;- Teens: We chose teens because they can be influenced by the situation and help spread awareness about the situation in Sitio Bebe.</dd>
-                            <dd>&emsp;&emsp;- Adults: We chose adults because they can donate or help Sitio Bebe in their current situation.</dd>
-                            <dt>Needs</dt>
-                            <dd>&emsp;&emsp;- Teens watch these videos because they want to learn more about a certain topic.</dd>
-                            <dd>&emsp;&emsp;- Adults watch these types of videos because it helps them learn more about what’s happening in our world.</dd>
-                            <dd>&emsp;&emsp;- Since the brain responds to visuals faster, teens and adults process the information faster in videos than reading it from text.</dd>
-                            <dd>&emsp;&emsp;- The adults and teens are curious about how these less fortunate communities handle the problems they are currently facing and how the viewers can help these types of communities.</dd>
-                            <dd>&emsp;&emsp;- Teens and adults watch these generally for new information.</dd>
-                        </dl>
-                        &emsp;&emsp;Our group chose educational videos in response to the need of the audience to get more information about different topics, what’s happening around the world, and be aware of social problems. This type of content can present alarming issues that they can be aware of, for example, Sitio Bebe (which is a less fortunate community) is currently facing a shortage of clean water, a lack of resources, and the inability to access medical healthcare, so by watching an educational video they can learn about the situation of the community and how they can assist them.
-                    </p>
-                </div>
-            </div>
-            <div class='text-center p-3 text-white' id='meet-the-team'>
-                <h1 class="mb-3">Meet the team</h1>
-                <div class="row row-cols-1 row-cols-sm-5 g-4 m-2 text-dark">
-                    <div class="col-sm-2">
-                        <div class="card group-member">
-                            <img src="images/richan.png" class="card-img-top" alt="a photo of richan">
-                            <div class="card-body">
-                                <!-- <h5 class="card-title">Richan</h5> -->
-                                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
-                                <blockquote class="mb-0">
-                                    <p class="card-text">
-                                        <i class="fa-solid fa-quote-left"></i>
-                                        Why am I the leader?
-                                        <i class="fa-solid fa-quote-right"></i>
-                                        <footer class="blockquote-footer">Richan (Facilitator)</footer>
-                                    </p>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="card group-member">
-                            <img src="images/marsha.png" class="card-img-top" alt="a photo of marsha">
-                            <div class="card-body">
-                                <!-- <h5 class="card-title">Marsha</h5> -->
-                                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
-                                <blockquote class="mb-0">
-                                    <p class="card-text">
-                                        <i class="fa-solid fa-quote-left"></i>
-                                        No is a full sentence
-                                        <i class="fa-solid fa-quote-right"></i>
-                                        <footer class="blockquote-footer">Marsha (Scribe)</footer>
-                                    </p>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="card group-member">
-                            <img src="images/jaycy.png" class="card-img-top" alt="a photo of jaycy">
-                            <div class="card-body">
-                                <!-- <h5 class="card-title">Jaycy</h5> -->
-                                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
-                                <blockquote class="mb-0">
-                                    <p class="card-text">
-                                        <i class="fa-solid fa-quote-left"></i>
-                                        People say nothing is impossible but i do nothing everyday
-                                        <i class="fa-solid fa-quote-right"></i>
-                                        <footer class="blockquote-footer">Jaycy</footer>
-                                    </p>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="card group-member">
-                            <img src="images/lana.png" class="card-img-top" alt="a photo of lana">
-                            <div class="card-body">
-                                <!-- <h5 class="card-title">Lana</h5> -->
-                                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p> -->
-                                <blockquote class="mb-0">
-                                    <p class="card-text">
-                                        <i class="fa-solid fa-quote-left"></i>
-                                        School is the death of me
-                                        <i class="fa-solid fa-quote-right"></i>
-                                        <footer class="blockquote-footer">Lana (Spokesperson/Graphic Designer)</footer>
-                                    </p>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="card group-member">
-                            <img src="images/carl.png" class="card-img-top" alt="a photo of carl">
-                            <div class="card-body">
-                                <!-- <h5 class="card-title">Carl</h5> -->
-                                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
-                                <blockquote class="mb-0">
-                                    <p class="card-text">
-                                        <b>
-                                            Group member missing please contact us if you found him
-                                        </b>
-                                        <!-- <i class="fa-solid fa-quote-left"></i> -->
-                                        <!-- <i class="fa-solid fa-quote-right"></i> -->
-                                        <!-- <footer class="blockquote-footer">Carl</footer> -->
-                                    </p>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="card group-member">
-                            <img src="images/jude.png" class="card-img-top" alt="a photo of jude">
-                            <div class="card-body">
-                                <!-- <h5 class="card-title">Jude</h5> -->
-                                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
-                                <!-- <p class="card-text"> -->
-                                <!--     new crispy pretzel chicken fries at burger king crispy crunchy pretzel outside tender juicy white meat chicken inside new crispy pretzel chicken fries or try original chicken fries only at Burger King -->
-                                <!-- </p> -->
-                                <blockquote class="mb-0">
-                                    <p class="card-text">
-                                        <i class="fa-solid fa-quote-left"></i>
-                                        New crispy pretzel chicken fries at burger king crispy crunchy pretzel outside tender juicy white meat chicken inside new crispy pretzel chicken fries or try original chicken fries only at Burger King
-                                        <i class="fa-solid fa-quote-right"></i>
-                                        <footer class="blockquote-footer">Jude</footer>
-                                    </p>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
+            <div id="website-menu" class='main-container'>
+                <div class="cards">
+                    <a href="q1/index.html" class="card">
+                        <img src="website-images/group7.png" alt="" style="width: 100%; border-radius: 10px;">
+                    </a>
+                    <a href="https://groupfivelifelabswebsite.on.drv.tw/" class="card">
+                        <img src="website-images/group5.png" alt="" style="width: 100%; border-radius: 10px;">
+                    </a>
+                    <a href="https://world-education-group-2ipba-b10-09-s2-1.000webhostapp.com/" class="card">
+                        <img src="website-images/group2.png" alt="" style="width: 100%; border-radius: 10px;">
+                    </a>
+                    <a href="#" class="card error-message">
+                        <h1 class="card__title">404</h1>
+                    </a>
                 </div>
             </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
