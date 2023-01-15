@@ -70,3 +70,18 @@ body {
     z-index: 0;
     opacity: 0;
 }
+
+#back-arrow {
+    position: absolute;
+    color: lightgray;
+    margin: 1rem;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 0;
+    transition: all 200ms ease;
+}
+
+#back-arrow:hover {
+    color: white;
+    transform: scale(1.1);
+}
