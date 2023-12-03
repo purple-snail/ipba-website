@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Webpage</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        const duration = 200
+        let currentContent = ''
+
+        $(document).ready(function(){
+            $('#Q1').click(function(){
+                $('.Q1-content').fadeToggle(duration)
+
+                if ($('.Q1-content').is(':visible')) {
+                    $('.Q1-content').css('display', 'flex')
+                    currentContent = 'Q1'
+                } else {
+                    $('.Q1-content').css('display', 'none')
+                    currentContent = ''
+                }
+
+                if ($('.Q2-content').is(':visible')) {
+                    $('.Q2-content').fadeOut(duration)
+                } else if ($('.Q3-content').is(':visible')) {
+                    $('.Q3-content').fadeOut(duration)
+                }
+
+                if (currentContent == 'Q1') {
+                    $('.Q2-content').fadeOut(duration)
+                    $('.Q3-content').fadeOut(duration)
+                }
+            })
+
+            $('#Q2').click(function(){
+                $('.Q2-content').fadeToggle(duration)
+
+                if ($('.Q2-content').is(':visible')) {
+                    $('.Q2-content').css('display', 'flex')
+                    currentContent = 'Q2'
+                } else {
+                    $('.Q2-content').css('display', 'none')
+                    currentContent = ''
+                }
+
+                if ($('.Q1-content').is(':visible')) {
+                    $('.Q1-content').fadeOut(duration)
+                } else if ($('.Q3-content').is(':visible')) {
+                    $('.Q3-content').fadeOut(duration)
+                }
+
+                if (currentContent == 'Q2') {
+                    $('.Q1-content').fadeOut(duration)
+                    $('.Q3-content').fadeOut(duration)
+                }
+            })
+
+            $('#Q3').click(function(){
+                $('.Q3-content').fadeToggle(duration)
+
+                if ($('.Q3-content').is(':visible')) {
+                    $('.Q3-content').css('display', 'flex')
+                    currentContent = 'Q3'
+                } else {
+                    $('.Q3-content').css('display', 'none')
+                    currentContent = ''
+                }
+
+                if ($('.Q1-content').is(':visible')) {
+                    $('.Q1-content').fadeOut(duration)
+                } else if ($('.Q2-content').is(':visible')) {
+                    $('.Q2-content').fadeOut(duration)
+                }
+
+                if (currentContent == 'Q3') {
+                    $('.Q1-content').fadeOut(duration)
+                    $('.Q2-content').fadeOut(duration)
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="navigation_bar">
+        <a href="../index.html" class="home-button"><i class="fa fa-home"></i>Home</a>
+        <button id="Q1">Q1</button>
+        <button id="Q2">Q2</button>
+        <button id="Q3">Q3</button>
+    </div>
+
+    <div class="Q1-content">
+        <a href="introduction.html">Introduction</a>
+        <a href="background.html">Background</a>
+        <a href="gender_issue.html">Gender Issue</a>
+        <a href="conclusion.html">Conclusion</a>
+    </div>
+
+    <div class="Q2-content">
+        <a href="solution.html">Solution</a>
+        <a href="research.html">Effectiveness Research</a>
+        <a href="references.html">References</a>
+    </div>
+
+    <div class="Q3-content">
+        <a href="prototype.html">Prototype</a>
+        <a href="analysis.html">Analysis</a>
+        <a href="revised-prototype.html">Revised Prototype</a>
+    </div>
+    <br>
+    <div id="conclusion">
+        <div class="conclusion-images">
+            <img src="images/doko.jpg">
+            <img src="images/rainbowbrain.jpg">
+        </div>
+        <h2>Conclusion</h2>
+        <p>
+            To sum up everything, the gender problems that we are focusing on is the discrimination against LGBTQ+. Homophobia is passed down from adults that don’t support LGBTs, the reason behind that is because they are being disgusted and can’t accept that being a part of LGBT is not a sin. People nowadays are being so religious. They also said that being part of LGBT is a sin since it wasn’t mentioned in the bible, it wasn’t mentioned so how can you know that it was a sin? And wait, technologies are not mentioned in the bible but why are you using them?
+            Therefore, you should start being open-minded from now on! Our task is finished. I hope you should start changing your mindset.<br>
+        </p>
+    </div>
+</body>
+</html>

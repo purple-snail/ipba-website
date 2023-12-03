@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Webpage</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        const duration = 200
+        let currentContent = ''
+
+        $(document).ready(function(){
+            $('#Q1').click(function(){
+                $('.Q1-content').fadeToggle(duration)
+
+                if ($('.Q1-content').is(':visible')) {
+                    $('.Q1-content').css('display', 'flex')
+                    currentContent = 'Q1'
+                } else {
+                    $('.Q1-content').css('display', 'none')
+                    currentContent = ''
+                }
+
+                if ($('.Q2-content').is(':visible')) {
+                    $('.Q2-content').fadeOut(duration)
+                } else if ($('.Q3-content').is(':visible')) {
+                    $('.Q3-content').fadeOut(duration)
+                }
+
+                if (currentContent == 'Q1') {
+                    $('.Q2-content').fadeOut(duration)
+                    $('.Q3-content').fadeOut(duration)
+                }
+            })
+
+            $('#Q2').click(function(){
+                $('.Q2-content').fadeToggle(duration)
+
+                if ($('.Q2-content').is(':visible')) {
+                    $('.Q2-content').css('display', 'flex')
+                    currentContent = 'Q2'
+                } else {
+                    $('.Q2-content').css('display', 'none')
+                    currentContent = ''
+                }
+
+                if ($('.Q1-content').is(':visible')) {
+                    $('.Q1-content').fadeOut(duration)
+                } else if ($('.Q3-content').is(':visible')) {
+                    $('.Q3-content').fadeOut(duration)
+                }
+
+                if (currentContent == 'Q2') {
+                    $('.Q1-content').fadeOut(duration)
+                    $('.Q3-content').fadeOut(duration)
+                }
+            })
+
+            $('#Q3').click(function(){
+                $('.Q3-content').fadeToggle(duration)
+
+                if ($('.Q3-content').is(':visible')) {
+                    $('.Q3-content').css('display', 'flex')
+                    currentContent = 'Q3'
+                } else {
+                    $('.Q3-content').css('display', 'none')
+                    currentContent = ''
+                }
+
+                if ($('.Q1-content').is(':visible')) {
+                    $('.Q1-content').fadeOut(duration)
+                } else if ($('.Q2-content').is(':visible')) {
+                    $('.Q2-content').fadeOut(duration)
+                }
+
+                if (currentContent == 'Q3') {
+                    $('.Q1-content').fadeOut(duration)
+                    $('.Q2-content').fadeOut(duration)
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="navigation_bar">
+        <a href="../index.html" class="home-button"><i class="fa fa-home"></i>Home</a>
+        <button id="Q1">Q1</button>
+        <button id="Q2">Q2</button>
+        <button id="Q3">Q3</button>
+    </div>
+
+    <div class="Q1-content">
+        <a href="introduction.html">Introduction</a>
+        <a href="background.html">Background</a>
+        <a href="gender_issue.html">Gender Issue</a>
+        <a href="conclusion.html">Conclusion</a>
+    </div>
+
+    <div class="Q2-content">
+        <a href="solution.html">Solution</a>
+        <a href="research.html">Effectiveness Research</a>
+        <a href="references.html">References</a>
+    </div>
+
+    <div class="Q3-content">
+        <a href="prototype.html">Prototype</a>
+        <a href="analysis.html">Analysis</a>
+        <a href="revised-prototype.html">Revised Prototype</a>
+    </div>
+    <br>
+    <div id="basic-information">
+        <h2>Basic Information</h2>
+        <div class="gender">
+            <p>
+                46.7% of the respondents are Male, 43.3% are famale and 10.0% of the respondents Prefer not to say. 		
+            </p>
+            <div class="gender-chart">
+                <img src="images/Gender.png" class="chart">
+            </div>
+        </div>
+        <div class="employment-status">
+            <p>
+                23.3% of the respondents are Employed and 76.7% of the respondents are Students.
+            </p>
+            <img src="images/Employment-Status.png" class="chart">
+        </div>
+    </div>
+
+    <div id="survey-analysis">
+        <h2>Survey Analysis</h2>
+        <div class="question-1">
+            <h3>Question 1:</h3>
+            <p>
+                100% of the respondents are answered yes and they are satisfied with our Prototype. 					
+            </p>
+            <div class="question-1-chart">
+                <img src="images/question-1.png" class="chart">
+            </div>
+        </div>
+        <div class="question-2">
+            <h3>Question 2:</h3>
+            <p>
+                63.3 % said they were satisfied while 33.3% said they were very satisfied and another 3.3% said they were dissatisfied, concluding that most of the respondents are satisfied with our podcast.
+            </p>
+            <div class="question-2-chart">
+                <img src="images/question-2.png" class="chart">
+            </div>
+        </div>
+        <div class="question-3">
+            <h3>Question 3:</h3>
+            <p>
+                100% of the responses said that our prototype can be useful in the furture.		
+            </p>
+            <div class="question-3-chart">
+                <img src="images/question-3.png" class="chart">
+            </div>
+        </div>
+        <div class="question-4">
+            <h3>Question 4:</h3>
+            <p>
+                3.4% of the respondents said no and 96.6% said yes that podcasts is a good solution for the misconception.						
+            </p>
+            <div class="question-4-chart">
+                <img src="images/question-4.png" class="chart">
+            </div>
+        </div>
+        <div class="question-5">
+            <h3>Question 5:</h3>
+            <p class="class">
+                90% said yes while 6.7% said no and another 3.3% said it depends if our podcast will educate people about the LGBTQ misconceptions.
+            </p>
+            <div class="question-5-chart">
+                <img src="images/question-5.png" class="chart">
+            </div>
+        </div>
+        <div class="question-6">
+            <h3>Question 6:</h3>
+            <p>
+                No one answered from 1 - 4 but 6.9% answered 5, 3.4% answered 6, 13.8% answered 7, 20.7% answered 8, 31% answered 9, and 24.1% answered 10. Concluding that they would be more likely to recommend our podcast.			
+            </p>
+            <div class="question-6-chart">
+                <img src="images/question-6.png" class="chart">
+            </div>
+        </div>
+        <div class="question-7">
+            <h3>Question 7:</h3>
+            <p>
+                100% of the respondents said that our prototype can be useful for today's generation.
+            </p>
+            <div class="question-7-chart">
+                <img src="images/question-7.png" class="chart">
+            </div>
+        </div>
+        <div class="question-8">
+            <h3>Question 8:</h3>
+            <p>
+                100% of the respondents said that they liked where we are going to upload the podcast.		
+            </p>
+            <div class="question-8-chart">
+                <img src="images/question-8.png" class="chart">
+            </div>
+        </div>
+        <div class="question-9">
+            <h3>Question 9:</h3>
+            <p>
+                Some respondents said to upload the podcast to other platforms like Facebook, YouTube, and TikTok. But 43.3% of the respondents said that the podcast being uploaded to Spotify was good enough.		
+            </p>
+            <div class="question-9-chart">
+                <img src="images/question-9.png" class="chart">
+            </div>
+        </div>
+        <div class="question-10">
+            <h3>Question 10:</h3>
+            <p>
+                Most people said that there is nothing to improve about the prototype whlie one said that we need more hyperlinks and another said that we must have someone respectable person talking in the podcast, another said that they want to hear the podcast first, another said that the prototype was good, another said to add more hyperlinks, and another said "Yes".
+            </p>
+            <br>
+            <table>
+                <tr>
+                    <th>N/A</th>
+                    <th>na</th>
+                    <th>Yes</th>
+                    <th>more hyperlinks</th>
+                    <th>Let us hear one content about your prototype.</th>
+                    <th>Everything is great, keep up the good work!</th>
+                    <th>none, just make sure that the person/people talking are respectable</th>
+                    <th>none</th>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <th>1</th>
+                    <th>1</th>
+                    <th>1</th>
+                    <th>1</th>
+                    <th>1</th>
+                    <th>1</th>
+                    <th>1</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

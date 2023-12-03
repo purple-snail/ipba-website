@@ -1,43 +1,28 @@
-const switchMenu = document.getElementById('switch-menu')
-const backArrow = document.getElementById('back-arrow')
-let timeline = gsap.timeline()
+const items = document.querySelectorAll(".item")
+let ms = 0
 
-switchMenu.onclick = () => {
-    timeline.to('#quarter-menu', {
-        opacity: 0,
-        zIndex: 0,
-        duration: 0.5
-    })
+items.forEach((item) => {
+    item.style.setProperty("animation-delay", ms + "ms")
+    item.classList.add("animate__animated", "animate__fadeInLeft")
+    ms = ms + 100
 
-    timeline.to('#website-menu', {
-        opacity: 1,
-        zIndex: 999,
-        duration: 0.5
-    })
+    item.onclick = (event) => {
+        event.preventDefault()
+        goto(item.getAttribute("href"))
+    }
+})
 
-    timeline.to('#back-arrow', {
-        opacity: 1,
-        zIndex: 1000,
-        duration: 0.5
-    })
-}
+function goto(link) {
+    ms = 0
+    for (let index = items.length - 1; index >= 0; index--) {
+        const item = items[index];
+        item.style.setProperty("animation-delay", ms + "ms")
+        item.classList.remove("animate__fadeInLeft")
+        item.classList.add("animate__animated", "animate__fadeOutRight")
+        ms = ms + 100
+    }
 
-backArrow.onclick = () => {
-    timeline.to('#website-menu', {
-        opacity: 0,
-        zIndex: 0,
-        duration: 0.5
-    })
-
-    timeline.to('#back-arrow', {
-        opacity: 0,
-        zIndex: 0,
-        duration: 0.5
-    })
-
-    timeline.to('#quarter-menu', {
-        opacity: 1,
-        zIndex: 999,
-        duration: 0.5
-    })
+    setTimeout(() => {
+        window.location.href = link
+    }, 200 * items.length)
 }

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Webpage</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        const duration = 200
+        let currentContent = ''
+
+        $(document).ready(function(){
+            $('#Q1').click(function(){
+                $('.Q1-content').fadeToggle(duration)
+
+                if ($('.Q1-content').is(':visible')) {
+                    $('.Q1-content').css('display', 'flex')
+                    currentContent = 'Q1'
+                } else {
+                    $('.Q1-content').css('display', 'none')
+                    currentContent = ''
+                }
+
+                if ($('.Q2-content').is(':visible')) {
+                    $('.Q2-content').fadeOut(duration)
+                } else if ($('.Q3-content').is(':visible')) {
+                    $('.Q3-content').fadeOut(duration)
+                }
+
+                if (currentContent == 'Q1') {
+                    $('.Q2-content').fadeOut(duration)
+                    $('.Q3-content').fadeOut(duration)
+                }
+            })
+
+            $('#Q2').click(function(){
+                $('.Q2-content').fadeToggle(duration)
+
+                if ($('.Q2-content').is(':visible')) {
+                    $('.Q2-content').css('display', 'flex')
+                    currentContent = 'Q2'
+                } else {
+                    $('.Q2-content').css('display', 'none')
+                    currentContent = ''
+                }
+
+                if ($('.Q1-content').is(':visible')) {
+                    $('.Q1-content').fadeOut(duration)
+                } else if ($('.Q3-content').is(':visible')) {
+                    $('.Q3-content').fadeOut(duration)
+                }
+
+                if (currentContent == 'Q2') {
+                    $('.Q1-content').fadeOut(duration)
+                    $('.Q3-content').fadeOut(duration)
+                }
+            })
+
+            $('#Q3').click(function(){
+                $('.Q3-content').fadeToggle(duration)
+
+                if ($('.Q3-content').is(':visible')) {
+                    $('.Q3-content').css('display', 'flex')
+                    currentContent = 'Q3'
+                } else {
+                    $('.Q3-content').css('display', 'none')
+                    currentContent = ''
+                }
+
+                if ($('.Q1-content').is(':visible')) {
+                    $('.Q1-content').fadeOut(duration)
+                } else if ($('.Q2-content').is(':visible')) {
+                    $('.Q2-content').fadeOut(duration)
+                }
+
+                if (currentContent == 'Q3') {
+                    $('.Q1-content').fadeOut(duration)
+                    $('.Q2-content').fadeOut(duration)
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="navigation_bar">
+        <a href="../index.html" class="home-button"><i class="fa fa-home"></i>Home</a>
+        <button id="Q1">Q1</button>
+        <button id="Q2">Q2</button>
+        <button id="Q3">Q3</button>
+    </div>
+
+    <div class="Q1-content">
+        <a href="introduction.html">Introduction</a>
+        <a href="background.html">Background</a>
+        <a href="gender_issue.html">Gender Issue</a>
+        <a href="conclusion.html">Conclusion</a>
+    </div>
+
+    <div class="Q2-content">
+        <a href="solution.html">Solution</a>
+        <a href="research.html">Effectiveness Research</a>
+        <a href="references.html">References</a>
+    </div>
+
+    <div class="Q3-content">
+        <a href="prototype.html">Prototype</a>
+        <a href="analysis.html">Analysis</a>
+        <a href="revised-prototype.html">Revised Prototype</a>
+    </div>
+    <br>
+    <div id="introduction">
+        <div class="introduction-images">
+            <img src="images/introduction1.jpg">
+            <img src="images/introduction2.jpg">
+        </div>
+        <h2>Introduction</h2>
+        <p>
+            There was an Archaeologist named Bennett and he is 2 years in Archaeology, which means he is new. He was tasked to do an expedition to find out more about the Incan Empire. He was sent to Peru to search for artifacts in the digging site and his goal was to find 5 artifacts. After 4 hours of traveling, He spent 5 hours searching for an artifact and he found 2 artifacts which are considered as 2-star artifacts. He also found a 5-star artifact which is made with gold and leather and the artifact is a mini-vault. He found nothing like this on the internet and has to find a way to unlock it.<br>
+            After 2 weeks, he finally figured out how to unlock this vault.
+            After he opened the vault, he found a 4-star artifact which is boots, and he immediately wore them. He was magically transported into the past where he discovered the first community of the Incan Civilization in the 1400s. The Inca Empire was a vast empire that flourished in the Andean region of South America. They lived in rural areas in windowless huts and worked most of their waking hours. There are no Incas alive today that is entirely indigenous; they were mostly wiped out by the Spanish who killed them in battle and by disease from Central & South America<br>
+            But before this happened 100 years ago, Bennett almost stole a 5-star artifact which is from the Inca Empire but decided to leave it because he knows that he will destroy the Incas timeline. This 5-star is blessed and made out of diamonds and gold statues. Bennett has left the past and moved on to the present and got to his plane and took off with the 2-star artifacts and left the 5-star vault/artifact to an unknown spot where no one can search.<br>
+        </p>
+    </div>
+</body>
+</html>

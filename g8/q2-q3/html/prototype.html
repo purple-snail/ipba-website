@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Webpage</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        const duration = 200
+        let currentContent = ''
+
+        $(document).ready(function(){
+            $('#Q1').click(function(){
+                $('.Q1-content').fadeToggle(duration)
+
+                if ($('.Q1-content').is(':visible')) {
+                    $('.Q1-content').css('display', 'flex')
+                    currentContent = 'Q1'
+                } else {
+                    $('.Q1-content').css('display', 'none')
+                    currentContent = ''
+                }
+
+                if ($('.Q2-content').is(':visible')) {
+                    $('.Q2-content').fadeOut(duration)
+                } else if ($('.Q3-content').is(':visible')) {
+                    $('.Q3-content').fadeOut(duration)
+                }
+
+                if (currentContent == 'Q1') {
+                    $('.Q2-content').fadeOut(duration)
+                    $('.Q3-content').fadeOut(duration)
+                }
+            })
+
+            $('#Q2').click(function(){
+                $('.Q2-content').fadeToggle(duration)
+
+                if ($('.Q2-content').is(':visible')) {
+                    $('.Q2-content').css('display', 'flex')
+                    currentContent = 'Q2'
+                } else {
+                    $('.Q2-content').css('display', 'none')
+                    currentContent = ''
+                }
+
+                if ($('.Q1-content').is(':visible')) {
+                    $('.Q1-content').fadeOut(duration)
+                } else if ($('.Q3-content').is(':visible')) {
+                    $('.Q3-content').fadeOut(duration)
+                }
+
+                if (currentContent == 'Q2') {
+                    $('.Q1-content').fadeOut(duration)
+                    $('.Q3-content').fadeOut(duration)
+                }
+            })
+
+            $('#Q3').click(function(){
+                $('.Q3-content').fadeToggle(duration)
+
+                if ($('.Q3-content').is(':visible')) {
+                    $('.Q3-content').css('display', 'flex')
+                    currentContent = 'Q3'
+                } else {
+                    $('.Q3-content').css('display', 'none')
+                    currentContent = ''
+                }
+
+                if ($('.Q1-content').is(':visible')) {
+                    $('.Q1-content').fadeOut(duration)
+                } else if ($('.Q2-content').is(':visible')) {
+                    $('.Q2-content').fadeOut(duration)
+                }
+
+                if (currentContent == 'Q3') {
+                    $('.Q1-content').fadeOut(duration)
+                    $('.Q2-content').fadeOut(duration)
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="navigation_bar">
+        <a href="../index.html" class="home-button"><i class="fa fa-home"></i>Home</a>
+        <button id="Q1">Q1</button>
+        <button id="Q2">Q2</button>
+        <button id="Q3">Q3</button>
+    </div>
+
+    <div class="Q1-content">
+        <a href="introduction.html">Introduction</a>
+        <a href="background.html">Background</a>
+        <a href="gender_issue.html">Gender Issue</a>
+        <a href="conclusion.html">Conclusion</a>
+    </div>
+
+    <div class="Q2-content">
+        <a href="solution.html">Solution</a>
+        <a href="research.html">Effectiveness Research</a>
+        <a href="references.html">References</a>
+    </div>
+
+    <div class="Q3-content">
+        <a href="prototype.html">Prototype</a>
+        <a href="analysis.html">Analysis</a>
+        <a href="revised-prototype.html">Revised Prototype</a>
+    </div>
+    <br>
+    <div id="documentation">
+        <h2>Documentation</h2>
+        <p>
+            To make a prototype, we first need to make a plan. So the first thing we did was brainstorm a plan. We brainstormed what platform we were going to upload the podcast to and what type of podcast we were going to make. Then we got stuck with the type of prototype we were going to make. We just couldn't decide, because we were trying to think on how we can make it and how we can explain it. But after some time me and my group decided to make a digital prototype. Because we were able to figure out how to make and explain it. Then when we were told to create the prototype, we started to make the prototype that we have planned. But when miss came to our gmeet and saw what we were making, she said that we were doing it all wrong and it took some time for her to explain what was wrong and what were we supposed to make because we didn't understand what she was saying. But after some more explaining, we finally understood what was the problem and we went to fix it. But that required us to change our original plans, so we did. After changing the plans and a couple of days later, we finished making the prototype. But while making the prototype the team was worried that we were not making the prototype correctly. Because of this I asked miss to check out our prototype to see if we made it correctly and she said that we did a great job at making the prototype. But she also said we could still improve it.
+        </p>
+    </div>
+    <div id="plans">
+        <h2>Plans</h2>
+        <div class="current-plans">
+            <h3>Current Plans</h3>
+            <p>
+                <b>Platform:</b> Spotify<br>
+                <b>Podcast Type:</b> Audio<br>
+                <b>Prototype Type:</b> Digital Prototype<br>
+                <b>Creator of presentation:</b> All<br>
+                <b>Presenter:</b> Water<br>
+                <b>Speaker:</b> Francis and Reine<br>
+                <b>Topic:</b><br>
+                &emsp; 1. Being trans means having surgery<br>
+                &emsp; <b>2. Gender stereotypes</b><br>
+                <b>Length:</b> 5-10 mins of podcasts<br>
+                <b>Who will record:</b> Francis at Zoe, Water<br>
+                <b>Where to record:</b> gmeet or discord<br>
+            </p>
+            <div class="sketch">
+                <img src="images/sketch.jpg">
+            </div>
+        </div>
+        <div class="previous-plans">
+            <h3>Previous Plans</h3>
+            <p>
+                <b>Platform:</b> TikTok<br>
+                <b>Podcast Type:</b> Livestream<br>
+                <b>Prototype Type:</b> Digital Prototype<br>
+                <b>Creator of presentation:</b> All<br>
+                <b>Presenter:</b> Water<br>
+                <b>Speaker:</b> Francis and Reine<br>
+                <b>Topic:</b><br>
+                &emsp; 1. Being trans means having surgery<br>
+                &emsp; <b>2. Gender stereotypes</b><br>
+                <b>Length:</b> 5-10 mins of podcasts<br>
+                <b>Who will record:</b> Francis at Zoe, Water<br>
+                <b>Where to record:</b> gmeet or discord<br>
+            </p>
+            <div class="sketch">
+                <img src="images/tiktok.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="prototype-preview">
+        <h2>Prototype Preview</h2>
+        <div style="position: relative; width: 500px; height: 90%; padding-top: 0;
+        padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin: auto; margin-top: 0; margin-bottom: 0; overflow: hidden;
+        border-radius: 8px; will-change: transform; justify-content: center; align-items: center;">
+            <iframe loading="lazy" style="width: 100%; height: 700px; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAE6ezI2CZo&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>

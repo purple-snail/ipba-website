@@ -1,0 +1,58 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#hero {
+    height: 92vh;
+    background: #8E2DE2;
+    background: linear-gradient(135deg, #23006b, #4e1a7a);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: linear-gradient(135deg, #4A00E0, #8E2DE2); /1* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *1/ */
+}
+
+#navbar {
+    /* background-color: #45008a !important; */
+    background: linear-gradient(90deg, #23006b, #4e1a7a);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-primary {
+    border-color: #9d27f2 !important;
+    background-color: #9d27f2 !important;
+    color: white !important;
+}
+
+.btn-primary:hover {
+    border-color: #6d1ba8 !important;
+    background-color: #6d1ba8 !important;
+    color: #c4c4c4 !important;
+}
+
+.research {
+    background-image: url('./images/research.svg');
+    background-position: calc(100% + 10%) calc(100% + 50%);
+    background-repeat: no-repeat;
+    background-size: 250px;
+}
+
+.survey {
+    background-image: url('./images/survey.svg');
+    background-position: calc(100% + 5%) calc(100% + 50%);
+    background-repeat: no-repeat;
+    background-size: 250px;
+}
+
+.check {
+    background-image: url('./images/check.svg'), linear-gradient(335deg, #910175, #333399);
+    background-position: calc(0% - 20%) calc(0% - 70%), center center;
+    background-repeat: no-repeat;
+    background-size: 250px, 100%;
+}
+
+.student {
+    background-image: url('./images/student.svg'), linear-gradient(335deg, #910175, #333399);
+    background-position: calc(0% - 15%) calc(0%), center center;
+    background-repeat: no-repeat;
+    background-size: 200px, 100%;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Webpage</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        const duration = 200
+        let currentContent = ''
+
+        $(document).ready(function(){
+            $('#Q1').click(function(){
+                $('.Q1-content').fadeToggle(duration)
+
+                if ($('.Q1-content').is(':visible')) {
+                    $('.Q1-content').css('display', 'flex')
+                    currentContent = 'Q1'
+                } else {
+                    $('.Q1-content').css('display', 'none')
+                    currentContent = ''
+                }
+
+                if ($('.Q2-content').is(':visible')) {
+                    $('.Q2-content').fadeOut(duration)
+                } else if ($('.Q3-content').is(':visible')) {
+                    $('.Q3-content').fadeOut(duration)
+                }
+
+                if (currentContent == 'Q1') {
+                    $('.Q2-content').fadeOut(duration)
+                    $('.Q3-content').fadeOut(duration)
+                }
+            })
+
+            $('#Q2').click(function(){
+                $('.Q2-content').fadeToggle(duration)
+
+                if ($('.Q2-content').is(':visible')) {
+                    $('.Q2-content').css('display', 'flex')
+                    currentContent = 'Q2'
+                } else {
+                    $('.Q2-content').css('display', 'none')
+                    currentContent = ''
+                }
+
+                if ($('.Q1-content').is(':visible')) {
+                    $('.Q1-content').fadeOut(duration)
+                } else if ($('.Q3-content').is(':visible')) {
+                    $('.Q3-content').fadeOut(duration)
+                }
+
+                if (currentContent == 'Q2') {
+                    $('.Q1-content').fadeOut(duration)
+                    $('.Q3-content').fadeOut(duration)
+                }
+            })
+
+            $('#Q3').click(function(){
+                $('.Q3-content').fadeToggle(duration)
+
+                if ($('.Q3-content').is(':visible')) {
+                    $('.Q3-content').css('display', 'flex')
+                    currentContent = 'Q3'
+                } else {
+                    $('.Q3-content').css('display', 'none')
+                    currentContent = ''
+                }
+
+                if ($('.Q1-content').is(':visible')) {
+                    $('.Q1-content').fadeOut(duration)
+                } else if ($('.Q2-content').is(':visible')) {
+                    $('.Q2-content').fadeOut(duration)
+                }
+
+                if (currentContent == 'Q3') {
+                    $('.Q1-content').fadeOut(duration)
+                    $('.Q2-content').fadeOut(duration)
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="navigation_bar">
+        <a href="../index.html" class="home-button"><i class="fa fa-home"></i>Home</a>
+        <button id="Q1">Q1</button>
+        <button id="Q2">Q2</button>
+        <button id="Q3">Q3</button>
+    </div>
+
+    <div class="Q1-content">
+        <a href="introduction.html">Introduction</a>
+        <a href="background.html">Background</a>
+        <a href="gender_issue.html">Gender Issue</a>
+        <a href="conclusion.html">Conclusion</a>
+    </div>
+
+    <div class="Q2-content">
+        <a href="solution.html">Solution</a>
+        <a href="research.html">Effectiveness Research</a>
+        <a href="references.html">References</a>
+    </div>
+
+    <div class="Q3-content">
+        <a href="prototype.html">Prototype</a>
+        <a href="analysis.html">Analysis</a>
+        <a href="revised-prototype.html">Revised Prototype</a>
+    </div>
+
+    <div id="research">
+        <h2>Effectiveness Research</h2>
+        <p>
+            LGBTQ podcast<br>
+            <br>
+            What is LGBTQ? LGBTQ stands for lesbian, gay, bisexual, transgender, intersex, queer/questioning, asexual, and Many other terms. that people use to describe their experiences of their gender, sexuality, and physiological sex characteristics. Because of their sexuality, they have gotten a lot of hate and misconceptions from people. This is the problem that we want to solve.<br>
+            <br>
+            The goal and purpose of this solution are to eliminate the confusion and misconceptions of the people about the LGBTQ community by educating them.<br>
+            <br>
+            <a class="link" href="https://www.learningtimes.com/what-we-do/podcast-production/benefits/">Why is a podcast an effective way to present information?</a> In podcasts, content is communicated directly to you, the listener, either verbally or via video. This is a much more intimate way to read information from emails and documents. Podcasts allow you to share your knowledge with your relevant audience. Brands can place podcasts on a variety of platforms, including Apple Podcasts, iTunes, Spotify, Google Play, and many other platforms. This is how you reach your target group that is interested in your content. The listener decides what and when he/she wants to hear. On the one hand, that means you are competing for their eyes and ears. Conversely, subscribing to a podcast increases your chances of actually receiving the information you're providing. When you prefer a podcast feed, new podcasts are consequently downloaded to your PC when they are free. You can pay attention to them whenever the timing is ideal.<br>
+            <br>
+            Podcasts are delivered digitally, eliminating many of the costs associated with other forms of communication such as postage, printed matter, and paper. You can also reduce meeting costs and email storage costs. They are easy to archive and can be updated quickly and easily. Once a digital recording dwells on your PC, you can take the webcast with you and listen at whatever point or any place you need if your PC is versatile. Or then again, you can move the digital broadcast to an individual media player like an iPod.<br>
+            <br>
+            How many people are using podcasts based on the recent survey? - According to <a class="link" href="https://www.insiderintelligence.com/insights/the-podcast-industry-report-statistics/#:~:text=In%202021%2C%20the%20number%20of,get%20older%20podcast%20listenership%20drops.">insiderintelligence.com</a> by 2021, the number of monthly listeners for podcasts in the United States will increase 10.1% year-on-year to 117.8 million. Podcasts are resonating with young consumers. This year, over 60% of US adults aged 18-34 listen to podcasts every month. However, as listeners grow older, podcast listeners decline.<br>
+            <br>
+            What is the concrete concept of your podcast? - The concept of our podcast is about giving awareness to the misconceptions about the LGBTQ community.<br>
+            <br>
+            Something similar to our solution is the “Making History Gay” podcast series, against a podcast series that retells stories of people interviewed decades ago for an award-winning oral history of the LGBTQ civil rights movement. This podcast series was voted #2 out of 11 LGBTQ-inclusive podcasts in a poll conducted by NBC Out in September 2017. The Making Gay History's Stonewall 50 season is selected as one of the outstanding podcasts of 2019 by The Atlantic on December 27, 2019.<br>
+            <br>
+            Another similar solution is the “LGBTQ&A” a podcast series, Which illustrates how the host replies to queries concerning LGBTQ topics and expresses their perspectives. The show's debut live recording took place on June 16, 2018, at The Bell House in Brooklyn, New York, as part of the Big Queer Pod Fest. The Big Queer Pod Fest featured LGBTQ&A, Making Gay History, Nancy, and Food 4 Thot as part of an "all-star alliance" of LGBTQ podcasts. In September 2017, NBC Out asked voters about their "favorite LGBTQ inclusive podcasts," and LGBTQ & A was named one of the 11th podcasts.<br>
+            <br>
+            <br>
+            <b>History of Lesbian, Gay, Bisexual, and Transgender Social Movements</b><br>
+            <br>
+            Social movements centered on the acceptance and rights of LGBT and LGBTQ people originated as a response to centuries of persecution by the church, state, and medical authorities. Where homosexual activity or departure from traditional gender roles/dress was prohibited by law or custom, such condemnation may be expressed through sensational public trials, banishment, medical warnings, and sermon rhetoric. For ages, these avenues of persecution cemented homophobia, but they also made entire populations aware of the reality of diversity. Whether a person realized they, too, had this identity and were in danger, or daring to advocate for tolerance.<br>
+            <br>
+            Lesbian<br>
+            A woman whose enduring physical, romantic, and/or emotional attraction is to other women. Some lesbians may prefer to identify as gay or as gay women.<br>
+            <br>
+            Gay<br>
+            The adjective used to describe people whose enduring physical, romantic, and/or emotional attractions are to people of the same sex. Sometimes lesbian is the preferred term for women.<br>
+            <br>
+            Bisexual<br>
+            A person who can form enduring physical, romantic, and/or emotional attractions to those of the same gender or those of another gender. People may experience this attraction in differing ways and degrees over their lifetime. Bisexual people need not have had specific sexual experiences to be bisexual; in fact, they need not have had any sexual experience at all to identify as bisexual.<br>
+            <br>
+            Transgender<br>
+            An umbrella term for people whose gender identity and/or gender expression differs from what is typically associated with the sex they were assigned at birth. People under the transgender umbrella may describe themselves using one or more of various terms, including transgender. Many transgender people are prescribed hormones by their doctors to align their bodies, with their gender identity. Some undergo surgery as well. But not all transgender people can or will take those steps, and a transgender identity is not dependent upon physical appearance or medical procedures.<br>
+            <br>
+            Queer<br>
+            An adjective used by some people whose sexual orientation is not exclusively heterosexual. Typically, for those who identify as queer, the terms lesbian, gay, and bisexual are perceived to be too limiting and/or fraught with cultural connotations they feel don’t apply to them. Some people may use queer, or genderqueer, to describe their gender identity and/or gender expression. Once considered a pejorative term, queer has been reclaimed by some LGBTQ people to describe themselves; however, it is not a universally accepted term even within the LGBTQ community.<br>
+            <br>
+            <br>
+            In conclusion, We know that LGBTQ is being discriminated against every year and a lot of the discrimination is from famous social media like Facebook and Twitter. There is a history of LGBTQ+ which is very large. We can design a podcast so that people can watch and be aware of today’s reality of racism.<br>
+        </p>
+    </div>
+</body>
+</html>
