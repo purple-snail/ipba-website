@@ -5,14 +5,15 @@ html {
 #hero {
     height: 92vh;
     background: #8E2DE2;
-    background: linear-gradient(135deg, #23006b, #4e1a7a);
+    background: linear-gradient(135deg, #340073, #610175);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* background: linear-gradient(135deg, #4A00E0, #8E2DE2); /1* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *1/ */
 }
 
 #navbar {
     /* background-color: #45008a !important; */
-    background: linear-gradient(90deg, #23006b, #4e1a7a);
+    /* background: linear-gradient(90deg, #23006b, #4e1a7a); */
+    background: linear-gradient(135deg, #340073, #610175);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
 }
