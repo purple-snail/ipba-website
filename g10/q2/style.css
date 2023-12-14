@@ -57,3 +57,7 @@ html {
     background-repeat: no-repeat;
     background-size: 200px, 100%;
 }
+
+div:hover>.goto-link {
+    opacity: 100% !important;
+}
